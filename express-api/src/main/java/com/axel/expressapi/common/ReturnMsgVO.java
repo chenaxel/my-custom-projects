@@ -36,4 +36,12 @@ public class ReturnMsgVO<T> {
         vo.setMessage(EnumReturnCodeInfo.OK.getMsg());
         return vo;
     }
+
+    public ReturnMsgVO<T> ok(T t) {
+        ReturnMsgVO<T> vo = new ReturnMsgVO<>();
+        vo.setData(t);
+        vo.setCode(EnumReturnCodeInfo.OK.getCode());
+        vo.setMessage(EnumReturnCodeInfo.OK.getMsg());
+        return vo;
+    }
 }
