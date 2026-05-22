@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: express-api
+
+logistics:
+  kuaidi100:
+    query-url: https://poll.kuaidi100.com/poll/query.do
+    map-track-url: https://poll.kuaidi100.com/poll/maptrack.do
+    customer: 311EFF257D2CBF1E76E97676B42A79C3
+    key: lflbbZVl7829
+    phone: 18702898789
