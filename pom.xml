@@ -15,6 +15,8 @@
     <!-- 子模块列表 -->
     <modules>
         <module>express-api</module>
+        <module>cus-tools</module>
+        <module>common-constant</module>
     </modules>
 
     <parent>
@@ -23,6 +25,17 @@
         <version>3.2.0</version>
         <relativePath/>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

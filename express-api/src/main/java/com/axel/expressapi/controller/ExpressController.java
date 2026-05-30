@@ -1,7 +1,7 @@
 package com.axel.expressapi.controller;
 
 import com.axel.expressapi.common.ExpressCompanyVO;
-import com.axel.expressapi.common.ReturnMsgVO;
+import com.axel.common.constant.ReturnMsgVO;
 import com.axel.expressapi.service.ExpressService;
 import com.kuaidi100.sdk.response.QueryTrackMapResp;
 import com.kuaidi100.sdk.response.QueryTrackResp;
