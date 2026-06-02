@@ -8,7 +8,7 @@
     <!-- 父项目信息 -->
     <groupId>com.axel</groupId>
     <artifactId>my-custom-projects</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>my-custom-projects</name>
 
@@ -26,20 +26,35 @@
         <relativePath/>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-aop</artifactId>
-        </dependency>
-    </dependencies>
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <skip_maven_deploy>false</skip_maven_deploy>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>https://packages.aliyun.com/6a1e455da75c9f938c3e4b8f/maven/2666897-release-uzi7oh</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>https://packages.aliyun.com/6a1e455da75c9f938c3e4b8f/maven/2666897-snapshot-eaoyzw</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-deploy-plugin</artifactId>
+                    <version>3.1.1</version>
+                    <configuration>
+                        <skip>${skip_maven_deploy}</skip>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
