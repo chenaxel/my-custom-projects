@@ -8,7 +8,7 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
     <artifactId>common-constant</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>common-constant</name>
     <description>common-constant</description>
     <packaging>jar</packaging>
@@ -20,7 +20,6 @@
         </dependency>
     </dependencies>
     <properties>
-        <java.version>17</java.version>
         <skip_maven_deploy>false</skip_maven_deploy>
     </properties>
     <build>
