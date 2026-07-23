@@ -4,3 +4,9 @@ server:
 spring:
   application:
     name: cus-tools
+
+# 自定义Dota配置
+dota:
+  steam:
+    api-key: AA65F2B5966B6DC567992D744189A2E2
+    page-size: 25
